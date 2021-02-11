@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        .defaultClass
+        {
+            display : block; 
+            background : #84ba64; 
+            width : 100%; 
+            color:white;
+            font-weight:bold;
+            align-items: center;
+            padding: 20px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="defaultClass">
+        {{>header}}
+    </div>
+
+    <div>{{error}}</div>
+    <a href="{{link}}">LINK</a>
+    {{>footer}}
+</body>
+</html>
