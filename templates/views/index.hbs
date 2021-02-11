@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        .defaultClass
+        {
+            display : block; 
+            background : #84ba64; 
+            width : 100%; 
+            color:white;
+            font-weight:bold;
+            align-items: center;
+            padding: 20px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="defaultClass">
+        {{>header}}
+    </div>
+
+    <form id="weather-form">
+        <input type="text" id="location" placeholder="Location">
+        <button>Submit</button>
+    </form>
+
+    <p id="weather"></p>
+    <p id="errorinfo"></p>
+
+    {{>footer}}
+    
+    <script src="/js/app.js"></script>
+</body>
+</html>
