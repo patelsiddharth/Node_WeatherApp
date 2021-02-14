@@ -2,7 +2,7 @@ const request = require('postman-request');
 
 const forecast = ({latitude, longitude}, callback) => 
 {
-    const url = `http://api.weatherstack.com/current?access_key=7ae9bbff0c627beec46ff31170005193&query=${latitude},${longitude}`;
+    const url = `http://api.weatherapi.com/v1/current.json?key=fd348c40bfe94277af4142736210401&q=${latitude},${longitude}`;
     
     request({url, json : true}, (error, response) => 
     {
@@ -17,8 +17,16 @@ const forecast = ({latitude, longitude}, callback) =>
         else
         {
             const weather = response.body.current;
-            callback(undefined, `${weather.weather_descriptions[0]}. It is currently ${weather.temperature} degrees out. It feels like ${weather.feelslike} degrees out.
-            Humidity is ${weather.humidity}%`);
+            let date = weather.last_updated;
+            date = date.split(' ');
+            const newUrl = `http://api.weatherapi.com/v1/astronomy.json?key=fd348c40bfe94277af4142736210401&q=${latitude},${longitude}&dt=${date[0]}`;
+            console.log(newUrl);
+            request({url : newUrl, json : true}, (error, result) => {
+                callback(undefined, {
+                    weather,
+                    locationInfo : result.body
+                });
+            })
         }
     })
 }
