@@ -12,6 +12,58 @@ body
     align-items: center;
     padding: 0px 10px;
 }
+a:hover
+{
+    text-decoration: none;
+}
+.app-title
+{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50px;
+}
+.sidenav
+{
+    display: flex;
+    flex-direction: column;
+}
+.sidenav-trigger
+{
+    display: grid;
+    margin: auto;
+}
+.sidenav-title
+{
+    display: grid;
+    grid-auto-flow: column;
+}
+.sidenav-close
+{
+    text-align: right;
+    align-items: center;
+    display: grid;
+}
+.social-link
+{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+}
+
+@font-face {
+  font-family: BeautifulPeople;
+  src: url('/assets/font/FriendlyFont.woff');
+}
+
+.social-title {
+  font-family: BeautifulPeople;
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  line-height: 1px!important;
+  margin: 0 90px;
+  padding: 20px 0;
+}
 
 .input-location
 {

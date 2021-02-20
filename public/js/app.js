@@ -19,7 +19,31 @@ const moonset = document.querySelector('.moonset');
 const preloader = document.querySelector('.preloader');
 const cardLocation = document.querySelector('.location-card');
 
-searchbtn.addEventListener('click', e => {
+
+document.addEventListener('DOMContentLoaded', function() 
+{
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+});
+
+$(document).ready(function(){
+$('.sidenav').sidenav();
+});
+
+const foot = document.querySelector('.madeWith')
+let tech = ['HTML','CSS','JavaScript','Node.JS']
+let i = 0;
+setInterval(() => 
+{
+    foot.innerHTML = tech[i++];
+    if(i >= tech.length)
+    {
+        i = 0;
+    }
+}, 1000);
+
+searchbtn.addEventListener('click', e => 
+{
     preloader.style.display = 'block';
     cardLocation.style.display = 'none';
 })

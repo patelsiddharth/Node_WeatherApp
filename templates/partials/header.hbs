@@ -1,8 +1,39 @@
-<div>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/help">Help</a>
+<div class="defaultClass1">
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="/assets/background.svg">
+                </div>
+                <div class="sidenav-title">
+                    <img class="circle" src="/assets/pic.jpg">
+                    <a class="sidenav-close" href="#!"><i class="material-icons">close</i></a>
+                </div>
+                <span class="name">Siddharth Patel</span>
+                <span class="email">siddharthpatel425@gmail.com</span>
+            </div>
+        </li>
+        <li><a class="waves-effect" href="/"><i class="material-icons">cottage</i> Home</a></li>
+        <li><div class="divider m-0"></div></li>
+        <li><a class="waves-effect" href="/about"><i class="material-icons">info</i> About</a></li>
+        <li><div class="divider m-0"></div></li>
+        <li><a class="waves-effect" href="/help"><i class="material-icons">help</i> Help</a></li>
+        <li style="margin-top: auto;background-color: rgba(0,0,0,0.05)">
+            <span class="social-title subheader">~ Connect with me ~</span>
+            {{!-- <div class="divider m-0"></div> --}}
+            <div class="social-link mt-2" style="">
+                <a class="waves-effect" href="https://github.com/patelsiddharth"><img src="/assets/social/github.svg"  width="30px" height="30px"/></a>
+                <a href="https://www.linkedin.com/in/siddharthpatel425/"><img src="/assets/social/linkedin.svg"  width="30px" height="30px"/></a>
+                <a href="#"><img src="/assets/social/instagram.svg" width="30px" height="30px"/></a>
+                <a href="mailto:siddharthpatel425@gmail.com"><img src="/assets/social/gmail.svg" width="30px" height="30px"/></a>
+            </div>
+        </li>
+    </ul>
+    <nav>
+    <div class="nav-wrapper">
+        <a href="#" data-target="slide-out" class="sidenav-trigger" style="display: block;"><i class="material-icons">menu</i></a>
+        {{title}}
+    </div>  
+    </nav>
 </div>
-
-<h6>{{title}}</h6>
 
