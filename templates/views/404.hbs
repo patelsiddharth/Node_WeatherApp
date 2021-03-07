@@ -4,26 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <style>
-        .defaultClass
-        {
-            display : block; 
-            background : #84ba64; 
-            width : 100%; 
-            color:white;
-            font-weight:bold;
-            align-items: center;
-            padding: 20px 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/404.css">
 </head>
 <body>
-    <div class="defaultClass">
-        {{>header}}
+    <div class="content">
+    <canvas class="snow" id="snow"></canvas>
+    <div class="main-text">
+        <h1>Aw jeez.<br/>That page has gone missing.</h1><a class="home-link" href="/">Hitch a ride back home.</a>
     </div>
-
-    <div>{{error}}</div>
-    <a href="{{link}}">LINK</a>
-    {{>footer}}
+    <div class="ground">
+        <div class="mound"> 
+        <div class="mound_text">404</div>
+        <div class="mound_spade"></div>
+        </div>
+    </div>
+    </div>
+    <script src="/js/404.js"></script>
 </body>
 </html>

@@ -1,0 +1,528 @@
+/* Precipitation Animation */
+.svg_precipitation
+{
+    width: 70px;
+    height: 50px;
+}
+
+.weather-item-precipitation:hover .raindrop-border
+{
+    animation: ranidrop-animate 2s infinite;
+}
+.weather-item-precipitation:hover .raindrop-fill
+{
+    animation: ranidrop-animate 2s infinite;
+}
+@keyframes ranidrop-animate
+{
+    from
+    {
+        opacity: 0;
+        transform: rotateX(32deg);
+    }
+    to
+    {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+.weather-item-precipitation:hover .percent_line
+{
+    animation: percent_line_animate 2s infinite;
+}
+@keyframes percent_line_animate
+{
+    from
+    {
+        opacity: 0;
+        transform: translate(30px, -30px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: rotateX(0px, 0px);
+    }
+}
+
+.weather-item-precipitation:hover .percent_circle
+{
+    animation: percent_circle_animate 2s infinite;
+}
+@keyframes percent_circle_animate
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+/* Sunset Animation */
+.svg_sunset
+{
+    width: 70px;
+    height: 50px;
+}
+
+.weather-item-sunset:hover .suncolor1
+{
+    animation: translateSun 2s infinite;
+}
+@keyframes translateSun
+{
+    from
+    {
+        transform: translateY(-100px);
+    }
+    to
+    {
+        transform: translateY(0px);
+    }
+}
+
+
+.weather-item-sunset:hover .suncolor2
+{
+    animation: animateSun2 2s infinite;
+}
+@keyframes animateSun2
+{
+    from
+    {
+        fill: rgb(255, 225, 125);
+        transform: translateY(-125px);
+    }
+    to
+    {
+        fill: rgb(255, 206, 134);
+        transform: translateY(0px);
+    }
+}
+
+.weather-item-sunset:hover .water
+{
+    animation: water 2s infinite;
+}
+@keyframes water
+{
+    from
+    {
+        fill : rgb(171, 255, 219);
+    }
+    to
+    {
+        fill: rgb(230, 190, 220);
+    }
+}
+
+.weather-item-sunset:hover .water2
+{
+    animation: water2 2s infinite;
+}
+@keyframes water2
+{
+    from
+    {
+        fill : rgb(171, 255, 219);
+    }
+    to
+    {
+        fill: rgb(196, 222, 255);
+    }
+}
+
+.weather-item-sunset:hover .line1
+{
+    animation: line1 2s infinite;
+}
+@keyframes line1
+{
+    from
+    {
+        fill : white;
+    }
+    to
+    {
+        fill: black;
+    }
+}
+
+.weather-item-sunset:hover .line2, .weather-item-sunset:hover .line3, .weather-item-sunset:hover .line4
+{
+    animation: line234 2s infinite;
+}
+@keyframes line234
+{
+    from
+    {
+        fill : rgb(72, 195, 151);
+    }
+    to
+    {
+        fill: black;
+    }
+}
+
+.weather-item-sunset:hover .cloudborderleft, .weather-item-sunset:hover .cloudLeft
+{
+    animation: translateCloud1 2s infinite;
+}
+    @keyframes translateCloud1
+{
+    from
+    {
+        transform: translateX(-100px);
+    }
+    to
+    {
+        transform: translateY(0px);
+    }
+}
+
+.weather-item-sunset:hover .cloudborderRight, .weather-item-sunset:hover .cloudRight
+{
+    animation: translateCloud2 2s infinite;
+}
+@keyframes translateCloud2
+{
+    from
+    {
+        transform: translateX(100px);
+    }
+    to
+    {
+        transform: translateY(0px);
+    }
+}
+
+.weather-item-sunset:hover .ray1
+{
+    animation: ray1 2s infinite;
+}
+@keyframes ray1
+{
+    from
+    {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.weather-item-sunset:hover .ray4, .weather-item-sunset:hover .sunborder
+{
+    animation: ray4 2s infinite;
+}
+@keyframes ray4
+{
+    from
+    {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.weather-item-sunset:hover .ray2, .weather-item-sunset:hover .ray3
+{
+    animation: ray23 2s infinite;
+}
+@keyframes ray23
+{
+    from
+    {
+        transform: translate(-50px,-50px);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.weather-item-sunset:hover .ray7, .weather-item-sunset:hover .ray6, .weather-item-sunset:hover .ray5
+{
+    animation: ray567 2s infinite;
+}
+@keyframes ray567
+{
+    from
+    {
+        transform: translate(50px,-50px);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+/* Sunrise Animation */
+.svg_sunrise
+{
+    width: 70px;
+    height: 50px;
+}
+
+.weather-item-sunrise:hover .sunrise_sun
+{
+    animation: sunrise_sun 2s infinite;
+}
+@keyframes sunrise_sun
+{
+    from
+    {
+        fill : rgb(255, 225, 125);
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to
+    {
+        fill: #FFC850;
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.weather-item-sunrise:hover .sunrise_sunbg
+{
+    animation: sunrise_sunbg 2s infinite;
+}
+@keyframes sunrise_sunbg
+{
+    from
+    {
+        fill : rgb(255, 255, 255);
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to
+    {
+        fill: #ffff7d;
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.weather-item-sunrise:hover .sunrise_sunborder
+{
+    animation: sunrise_sunborder 2s infinite;
+}
+@keyframes sunrise_sunborder
+{
+    from
+    {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.weather-item-sunrise:hover .sunrise_water1
+{
+    animation: water1 2s infinite;
+}
+@keyframes water1
+{
+    from
+    {
+        fill : rgb(230, 190, 220);
+    }
+    to
+    {
+        fill: rgb(171, 255, 219);
+    }
+}
+
+.weather-item-sunrise:hover .sunrise_water2
+{
+    animation: water2 2s infinite;
+}
+@keyframes water2
+{
+    from
+    {
+        fill : rgb(196, 222, 255);
+    }
+    to
+    {
+        fill: rgb(171, 255, 219);
+    }
+}
+
+.weather-item-sunrise:hover .sunrise_line1
+{
+    animation: line1 2s infinite;
+}
+@keyframes line1
+{
+    from
+    {
+        fill : rgb(71, 77, 84);
+    }
+    to
+    {
+        fill: white;
+    }
+}
+
+.weather-item-sunrise:hover .sunrise_line2
+{
+    animation: line2 2s infinite;
+}
+@keyframes line2
+{
+    from
+    {
+        fill : rgb(71, 77, 84);
+    }
+    to
+    {
+        fill: rgb(72, 195, 151);
+    }
+}
+
+.weather-item-sunrise:hover .sunrise_ray1
+{
+    animation: sunrise_ray1 2s infinite;
+}
+@keyframes sunrise_ray1
+{
+    0%
+    {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50%
+    {
+        transform: translateX(50px);
+        opacity: 0.1;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.weather-item-sunrise:hover .sunrise_ray23
+{
+    animation: sunrise_ray23 2s infinite;
+}
+@keyframes sunrise_ray23
+{
+    0%
+    {
+        transform: translate(100px, 100px);
+        opacity: 0;
+    }
+    50%
+    {
+        transform: translate(50px, 50px);
+        opacity: 0.1;
+    }
+    100%
+    {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.weather-item-sunrise:hover .sunrise_ray567
+{
+    animation: sunrise_ray567 2s infinite;
+}
+@keyframes sunrise_ray567
+{
+    0%
+    {
+        transform: translate(-100px, 100px);
+        opacity: 0;
+    }
+    50%
+    {
+        transform: translate(-50px, 50px);
+        opacity: 0.1;
+    }
+    100%
+    {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.weather-item-sunrise:hover .sunrise_ray4
+{
+    animation: sunrise_ray4 2s infinite;
+}
+@keyframes sunrise_ray4
+{
+    0%
+    {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    50%
+    {
+        transform: translateY(50px);
+        opacity: 0.1;
+    }
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.weather-item-sunrise:hover .sunrise_cloud1
+{
+    animation: sunrise_cloud1 2s infinite;
+}
+@keyframes sunrise_cloud1
+{
+    from
+    {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+.weather-item-sunrise:hover .sunrise_cloud2
+{
+    animation: sunrise_cloud2 2s infinite;
+}
+@keyframes sunrise_cloud2
+{
+    from
+    {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}

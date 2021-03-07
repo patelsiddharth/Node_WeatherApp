@@ -72,9 +72,6 @@ app.get('/weather', (req, res) => {
                 }
                 else
                 {
-                    console.log('----------------------------------------------------------------');
-                    console.log(result);
-                    console.log('----------------------------------------------------------------');
                     const respo = `${result.weather.condition.text}. It is currently ${result.weather.temp_c}℃ out. It feels like ${result.weather.feelslike_c}℃ out. Humidity is ${result.weather.humidity}%`;
                     res.send({
                         location : req.query.address,
@@ -89,13 +86,6 @@ app.get('/weather', (req, res) => {
             })
         }
     });
-
-    // res.send({
-    //     temperature : 40,
-    //     location : req.query.address,
-    //     humidity : 10,
-    //     feelslike : 37
-    // })
 })
 
 app.get('/about/*', (req, res) => {
